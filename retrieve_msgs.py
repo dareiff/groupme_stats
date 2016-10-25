@@ -181,6 +181,8 @@ def countMsgs(group_name, group_id, direct_msgs, csv_file=None, processTextFunc=
 				created_at = ""
 			user = msg['name']
 			text = msg['text']
+			attachments = msg['attachments']
+			print attachments
 			if text is None:
 				text = ""
 			if user is None:
